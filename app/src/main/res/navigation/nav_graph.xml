@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/mainFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navigationcomponent.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
+            app:destination="@id/chooseRecipientFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewTransactionFragment2"
+            app:destination="@id/viewTransactionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewBalanceFragment"
+            app:destination="@id/viewBalanceFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/chooseRecipientFragment"
+        android:name="com.example.navigationcomponent.ChooseRecipientFragment"
+        android:label="ChooseRecipientFragment" >
+        <action
+            android:id="@+id/action_chooseRecipientFragment_to_specifyAmountFragment"
+            app:destination="@id/specifyAmountFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/conformationFragment"
+        android:name="com.example.navigationcomponent.ConformationFragment"
+        android:label="ConformationFragment" />
+
+
+    <fragment
+        android:id="@+id/specifyAmountFragment"
+        android:name="com.example.navigationcomponent.SpecifyAmountFragment"
+        android:label="SpecifyAmountFragment" >
+        <action
+            android:id="@+id/action_specifyAmountFragment_to_conformationFragment"
+            app:destination="@id/conformationFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/viewBalanceFragment"
+        android:name="com.example.navigationcomponent.ViewBalanceFragment"
+        android:label="ViewBalanceFragment" />
+
+
+    <fragment
+        android:id="@+id/viewTransactionFragment"
+        android:name="com.example.navigationcomponent.ViewTransactionFragment"
+        android:label="ViewTransactionFragment" />
+</navigation>
