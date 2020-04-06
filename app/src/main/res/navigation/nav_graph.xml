@@ -5,7 +5,9 @@
     android:id="@+id/nav_graph"
     app:startDestination="@+id/mainFragment"
     tools:ignore="UnusedNavigation">
-    <!--pop one is for back navigation and without pop one is for forword navigation-->
+    <!--pop one is for back navigation and without pop one is for forword navigation
+    slide_out_left means go to left
+    slide_in_left means coming from left-->
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.navigationcomponent.MainFragment"
